@@ -1,0 +1,203 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.control {
+  width: 100%;
+  padding: 16px 12px;
+  border: 1px solid #222;
+  background: #0a0a0a;
+}
+
+.textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid #222;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.warning {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #ffcc00;
+}
+
+
+.error {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #ff6b6b;
+}
+
+.hint {
+  margin-top: 4px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #333;
+  padding: 32px;
+  background: #0a0a0a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contentPreview {
+  line-height: 1.6;
+}
+
+.reviewTitle {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.reviewSummary {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #cccccc;
+}
+
+.reviewInfoRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.reviewMeta {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.reviewChip {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid #333;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.reviewDivider {
+  border: 0;
+  border-top: 1px solid #222;
+  margin: 24px 0;
+}
+
+.reviewContent {
+  font-size: 16px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  color: #e0e0e0;
+}
+
+.successMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  background: #0a0a0a;
+  border: 1px solid #333;
+  margin: 20px 0;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.successIcon {
+  width: 80px;
+  height: 80px;
+  background: #4ade80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 24px;
+  animation: scaleIn 0.5s ease-out 0.2s both;
+}
+
+.successMessage h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 12px;
+  animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+.successMessage p {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 8px;
+  animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+.redirectText {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+  animation: fadeInUp 0.6s ease-out 0.5s both;
+}
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 22px;
+  }
+  .actions {
+    flex-wrap: wrap;
+  }
+  
+  .successMessage {
+    padding: 40px 20px;
+  }
+  
+  .successIcon {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+  
+  .successMessage h2 {
+    font-size: 24px;
+  }
+}
+
+

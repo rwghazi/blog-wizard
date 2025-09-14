@@ -1,0 +1,24 @@
+.base {
+  padding: 10px 14px;
+  font: inherit;
+  transition: opacity 0.15s ease;
+}
+
+.primary {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
+
+.secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+.base:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+

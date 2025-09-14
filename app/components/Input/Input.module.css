@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.required {
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #222;
+  background: #0a0a0a;
+  color: #ffffff;
+  font: inherit;
+  font-size: 14px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.input::placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+.inputError {
+  border-color: #ff6b6b;
+}
+
+.inputError:focus {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.1);
+}
+
+.inputDisabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: #111;
+}
+
+.inputDisabled:focus {
+  border-color: #222;
+  box-shadow: none;
+}
+
+.error {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #ff6b6b;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hint {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #999;
+  opacity: 0.8;
+}
+
+.textarea {
+  min-height: 140px;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.fileInput {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.fileInput::-webkit-file-upload-button {
+  background: #333;
+  color: #ffffff;
+  border: 1px solid #555;
+  padding: 6px 12px;
+  margin-right: 12px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.fileInput::-webkit-file-upload-button:hover {
+  background: #444;
+}
+
+@media (max-width: 600px) {
+  .input {
+    font-size: 16px; 
+  }
+}
