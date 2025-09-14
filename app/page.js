@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import styles from "./page.module.css";
@@ -7,7 +7,7 @@ import Toast from "./components/Toast";
 import PostList from "./components/PostList";
 import Button from "./components/Button";
 
-export default function Home() {
+function HomePage() {
   const [posts, setPosts] = useState([]);
   const [toast, setToast] = useState({ show: false, message: "" });
   const searchParams = useSearchParams();
@@ -54,5 +54,13 @@ export default function Home() {
 
       <PostList posts={posts} />
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <HomePage />
+    </Suspense>
   );
 }
